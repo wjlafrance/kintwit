@@ -8,5 +8,6 @@ KinTwit::Application.routes.draw do
   match '/compose'      => "tweets#new",           :as => :new_tweet, :via => [:get, :post]
 
   root :to => "home#index"
+  
 end
 
