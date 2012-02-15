@@ -1,0 +1,10 @@
+<%== navigation_bar %>
+
+<table>
+  <% @timeline.each do |tweet| %>
+      <%== tweet_row tweet %>
+  <% end %>
+</table>
+
+<br>
+<%= will_paginate @timeline_pagination %>

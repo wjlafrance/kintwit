@@ -1,0 +1,7 @@
+<%== navigation_bar %>
+
+<form name="tweetform" action="<%= new_tweet_path %>">
+  <textarea name="tweet" cols="70" rows="3" onKeyUp="updateCharsRemaining()"></textarea><br>
+  <button type="submit">Tweet</button>
+  <span class="characters"><span id="chars_remaining">140</span> characters remaining</span>
+</form>

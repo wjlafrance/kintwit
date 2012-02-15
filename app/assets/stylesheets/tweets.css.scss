@@ -1,0 +1,30 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+td {
+  border-top:    1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+td.tweet_image {
+  width: 110px;
+}
+
+span.current_page {
+  font-size: xx-large;
+}
+
+span.pages {
+  font-size: x-large;
+}
+
+span.timestamp {
+  font-size: small;
+  color: gray;
+}
+
+span.characters {
+  font-size: small;
+  color: gray;
+}
