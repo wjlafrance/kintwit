@@ -2,9 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2'
 
-# Database adapters
-
-
 # Twitter API access
 gem 'twitter'
 gem 'oauth'
@@ -14,13 +11,13 @@ gem 'hashie'
 gem 'will_paginate'
 
 group :development do
-  # Hosting PaaS
-  gem 'heroku'
+  gem 'heroku'       # hosting platform
 end
 
 group :production do
-  gem 'unicorn' # server
-  gem 'pg' # database adapter
+  gem 'unicorn'      # server
+  gem 'pg'           # database adapter
+  gem 'newrelic_rpm' # performance monitor
 end
 
 group :test, :development do
