@@ -12,6 +12,9 @@ gem 'will_paginate'
 
 group :development do
   gem 'heroku'       # hosting platform
+  gem 'autotest'
+  #gem 'autotest-fsevent'
+  #gem 'autotest-growl'
 end
 
 group :production do
@@ -22,9 +25,6 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'autotest'
-  gem 'autotest-fsevent'
-  gem 'autotest-growl'
   gem 'simplecov' # test coverage meter
   gem 'timecop'
   gem 'sqlite3' # database adapter
