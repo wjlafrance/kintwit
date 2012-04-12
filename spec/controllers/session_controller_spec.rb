@@ -15,7 +15,7 @@ describe SessionController do
         controller.sign_out
         get :login
       end
-      specify { response.redirect_url.should match(/^https.*twitter.com/) }
+      specify { response.should redirect_to root_path }
     end
   end
   

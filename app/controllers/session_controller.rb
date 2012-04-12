@@ -7,9 +7,13 @@ class SessionController < ApplicationController
       Twitter.consumer_secret, \
       :site => 'https://api.twitter.com'
 
-    request_token = consumer.get_request_token(:oauth_callback => finish_login_url)
-    session[:request_token] = request_token
-    redirect_to request_token.authorize_url
+    begin
+      request_token = consumer.get_request_token(:oauth_callback => finish_login_url)
+      session[:request_token] = request_token
+      redirect_to request_token.authorize_url
+    rescue
+      redirect_to root_path
+    end
   end
 
   def finish_login
