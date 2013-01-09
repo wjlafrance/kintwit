@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2'
+gem 'rails', '3.2.11'
 
 # Twitter API access
-gem 'twitter'
+gem 'twitter', '~> 2.1'
 gem 'oauth'
 gem 'hashie'
 
@@ -13,8 +13,6 @@ gem 'will_paginate'
 group :development do
   gem 'heroku'       # hosting platform
   gem 'autotest'
-  #gem 'autotest-fsevent'
-  #gem 'autotest-growl'
 end
 
 group :production do

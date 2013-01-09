@@ -18,7 +18,7 @@ describe SessionController do
       specify { response.should redirect_to root_path }
     end
   end
-  
+
   describe "#finish_login" do
   end
 

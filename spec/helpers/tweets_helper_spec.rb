@@ -8,7 +8,7 @@ describe TweetsHelper do
       @user = OpenStruct.new :profile_image_url => "https://www.google.com/intl/en_com/images/srpr/logo3w.png" 
       @tweet = OpenStruct.new  :user => @user
     end
-    
+
     subject { profile_image_for(@tweet) }
     it { should include 'height="100"' }
     it { should include 'width="100"' }
